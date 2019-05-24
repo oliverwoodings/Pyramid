@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import BEMHelper from "react-bem-helper";
 import getUnit from "get-unit";
 import elementResizeDetector from "element-resize-detector";
@@ -8,15 +9,15 @@ import PyramidElement from "./PyramidElement";
 
 export default class Pyramid extends React.Component {
     static propTypes = { 
-        elements: React.PropTypes.arrayOf(React.PropTypes.object).isRequired,
-        numberOfColumns: React.PropTypes.object,
-        magicValues: React.PropTypes.object,
-        baseClass: React.PropTypes.string,
-        gutter: React.PropTypes.number,
-        transition: React.PropTypes.string,
-        derenderIfNotInViewAnymore: React.PropTypes.bool,
-        style: React.PropTypes.object,
-        onElementClick: React.PropTypes.func
+        elements: PropTypes.arrayOf(PropTypes.object).isRequired,
+        numberOfColumns: PropTypes.object,
+        magicValues: PropTypes.object,
+        baseClass: PropTypes.string,
+        gutter: PropTypes.number,
+        transition: PropTypes.string,
+        derenderIfNotInViewAnymore: PropTypes.bool,
+        style: PropTypes.object,
+        onElementClick: PropTypes.func
     };
 
     static defaultProps = { 

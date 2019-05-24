@@ -1,15 +1,16 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import BEMHelper from "react-bem-helper";
 
 class PyramidElement extends React.Component {
     static propTypes = { 
-        src: React.PropTypes.string.isRequired,
-        width: React.PropTypes.number.isRequired,
-        height: React.PropTypes.number.isRequired,
-        top: React.PropTypes.number,
-        left: React.PropTypes.number,
-        type: React.PropTypes.string,
-        baseClass: React.PropTypes.string
+        src: PropTypes.string.isRequired,
+        width: PropTypes.number.isRequired,
+        height: PropTypes.number.isRequired,
+        top: PropTypes.number,
+        left: PropTypes.number,
+        type: PropTypes.string,
+        baseClass: PropTypes.string
     };
 
     static defaultProps = { 
