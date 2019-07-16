@@ -213,7 +213,7 @@ export default class Pyramid extends React.Component {
 
     handleClick(key, event) {
         if(this.props.onElementClick) {
-            this.props.onElementClick(this.state.allElementProps[key], event);
+            this.props.onElementClick(this.state.allElementProps[key], event, key);
         }
     }
 
